@@ -23,5 +23,6 @@ urlpatterns = [
     url(r'webexample/', include('webexample.urls')),
     url(r'mymap/', include('mymap.urls')),
     url(r'newmap/', include('newmap.urls')),
+    url(r'news/', include('news.urls')),
 
 ]
