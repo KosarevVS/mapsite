@@ -21,7 +21,7 @@ urlpatterns = [
     url(r'^', include('mainApp.urls')), #здесь не ^$ чтоб при входе в контакты мы тоже входили в mainApp и искали там contact
     url(r'admin/', admin.site.urls),
     url(r'webexample/', include('webexample.urls')),
-    url(r'mymap/', include('mymap.urls')),
+    url(r'newmap2/', include('newmap2.urls')),
     url(r'newmap/', include('newmap.urls')),
     url(r'news/', include('news.urls')),
 

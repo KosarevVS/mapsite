@@ -13,7 +13,8 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+#комменитм путь к базе данных по умолчанию
+#BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
@@ -33,7 +34,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'news',
     'newmap',
-    'mymap',
+    'newmap2',
     'webexample',
     'mainApp',
     'django.contrib.admin',
@@ -82,7 +83,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',#sqlite3
         'NAME': 'mydjangoproject_db',#os.path.join(BASE_DIR, 'db.sqlite3'
-        'USER': 'djuser',
+        'USER': 'djuser',# создали пользователя, наделили его всеми правами
         'PASSWORD': '980',
         'HOST':'127.0.0.1',
         'PORT': 5432,
