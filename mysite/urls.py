@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include
 from django.conf.urls import url
+# from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     url(r'^', include('mainApp.urls')), #здесь не ^$ чтоб при входе в контакты мы тоже входили в mainApp и искали там contact
@@ -24,5 +25,5 @@ urlpatterns = [
     url(r'newmap2/', include('newmap2.urls')),
     url(r'newmap/', include('newmap.urls')),
     url(r'news/', include('news.urls')),
-
+    # staticfiles_urlpatterns(),
 ]

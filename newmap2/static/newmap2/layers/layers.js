@@ -4,153 +4,154 @@ var wms_layers = [];
             'title': 'OpenStreetMap_0',
             'type': 'base',
             'opacity': 1.000000,
-            
-            
+
+
             source: new ol.source.XYZ({
     attributions: '<a href=""></a>',
                 url: 'http://a.tile.openstreetmap.org/{z}/{x}/{y}.png'
             })
         });var format_csv_test_1 = new ol.format.GeoJSON();
-var features_csv_test_1 = format_csv_test_1.readFeatures(json_csv_test_1, 
+var features_csv_test_1 = format_csv_test_1.readFeatures(json_csv_test_1,
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
 var jsonSource_csv_test_1 = new ol.source.Vector({
     attributions: '<a href=""></a>',
 });
 jsonSource_csv_test_1.addFeatures(features_csv_test_1);var lyr_csv_test_1 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_csv_test_1, 
+                source:jsonSource_csv_test_1,
                 style: style_csv_test_1,
-                title: '<img src="styles/legend/csv_test_1.png" /> csv_test'
+                // title: '<img src=location/static{ newmap2/styles/legend/csv_test_1.png;} >'
+                title:'<img src="styles/legend/csv_test_1.png" /> csv_test'
             });var format_voltage_sh_750_2 = new ol.format.GeoJSON();
-var features_voltage_sh_750_2 = format_voltage_sh_750_2.readFeatures(json_voltage_sh_750_2, 
+var features_voltage_sh_750_2 = format_voltage_sh_750_2.readFeatures(json_voltage_sh_750_2,
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
 var jsonSource_voltage_sh_750_2 = new ol.source.Vector({
     attributions: '<a href=""></a>',
 });
 jsonSource_voltage_sh_750_2.addFeatures(features_voltage_sh_750_2);var lyr_voltage_sh_750_2 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_voltage_sh_750_2, 
+                source:jsonSource_voltage_sh_750_2,
                 style: style_voltage_sh_750_2,
                 title: '<img src="styles/legend/voltage_sh_750_2.png" /> voltage_sh_750'
             });var format_voltage_sh_500_3 = new ol.format.GeoJSON();
-var features_voltage_sh_500_3 = format_voltage_sh_500_3.readFeatures(json_voltage_sh_500_3, 
+var features_voltage_sh_500_3 = format_voltage_sh_500_3.readFeatures(json_voltage_sh_500_3,
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
 var jsonSource_voltage_sh_500_3 = new ol.source.Vector({
     attributions: '<a href=""></a>',
 });
 jsonSource_voltage_sh_500_3.addFeatures(features_voltage_sh_500_3);var lyr_voltage_sh_500_3 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_voltage_sh_500_3, 
+                source:jsonSource_voltage_sh_500_3,
                 style: style_voltage_sh_500_3,
                 title: '<img src="styles/legend/voltage_sh_500_3.png" /> voltage_sh_500'
             });var format_voltage_sh_400_4 = new ol.format.GeoJSON();
-var features_voltage_sh_400_4 = format_voltage_sh_400_4.readFeatures(json_voltage_sh_400_4, 
+var features_voltage_sh_400_4 = format_voltage_sh_400_4.readFeatures(json_voltage_sh_400_4,
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
 var jsonSource_voltage_sh_400_4 = new ol.source.Vector({
     attributions: '<a href=""></a>',
 });
 jsonSource_voltage_sh_400_4.addFeatures(features_voltage_sh_400_4);var lyr_voltage_sh_400_4 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_voltage_sh_400_4, 
+                source:jsonSource_voltage_sh_400_4,
                 style: style_voltage_sh_400_4,
                 title: '<img src="styles/legend/voltage_sh_400_4.png" /> voltage_sh_400'
             });var format_voltage_sh_380_5 = new ol.format.GeoJSON();
-var features_voltage_sh_380_5 = format_voltage_sh_380_5.readFeatures(json_voltage_sh_380_5, 
+var features_voltage_sh_380_5 = format_voltage_sh_380_5.readFeatures(json_voltage_sh_380_5,
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
 var jsonSource_voltage_sh_380_5 = new ol.source.Vector({
     attributions: '<a href=""></a>',
 });
 jsonSource_voltage_sh_380_5.addFeatures(features_voltage_sh_380_5);var lyr_voltage_sh_380_5 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_voltage_sh_380_5, 
+                source:jsonSource_voltage_sh_380_5,
                 style: style_voltage_sh_380_5,
                 title: '<img src="styles/legend/voltage_sh_380_5.png" /> voltage_sh_380'
             });var format_voltage_sh_350_6 = new ol.format.GeoJSON();
-var features_voltage_sh_350_6 = format_voltage_sh_350_6.readFeatures(json_voltage_sh_350_6, 
+var features_voltage_sh_350_6 = format_voltage_sh_350_6.readFeatures(json_voltage_sh_350_6,
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
 var jsonSource_voltage_sh_350_6 = new ol.source.Vector({
     attributions: '<a href=""></a>',
 });
 jsonSource_voltage_sh_350_6.addFeatures(features_voltage_sh_350_6);var lyr_voltage_sh_350_6 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_voltage_sh_350_6, 
+                source:jsonSource_voltage_sh_350_6,
                 style: style_voltage_sh_350_6,
                 title: '<img src="styles/legend/voltage_sh_350_6.png" /> voltage_sh_350'
             });var format_voltage_sh_330_7 = new ol.format.GeoJSON();
-var features_voltage_sh_330_7 = format_voltage_sh_330_7.readFeatures(json_voltage_sh_330_7, 
+var features_voltage_sh_330_7 = format_voltage_sh_330_7.readFeatures(json_voltage_sh_330_7,
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
 var jsonSource_voltage_sh_330_7 = new ol.source.Vector({
     attributions: '<a href=""></a>',
 });
 jsonSource_voltage_sh_330_7.addFeatures(features_voltage_sh_330_7);var lyr_voltage_sh_330_7 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_voltage_sh_330_7, 
+                source:jsonSource_voltage_sh_330_7,
                 style: style_voltage_sh_330_7,
                 title: '<img src="styles/legend/voltage_sh_330_7.png" /> voltage_sh_330'
             });var format_voltage_sh_220_8 = new ol.format.GeoJSON();
-var features_voltage_sh_220_8 = format_voltage_sh_220_8.readFeatures(json_voltage_sh_220_8, 
+var features_voltage_sh_220_8 = format_voltage_sh_220_8.readFeatures(json_voltage_sh_220_8,
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
 var jsonSource_voltage_sh_220_8 = new ol.source.Vector({
     attributions: '<a href=""></a>',
 });
 jsonSource_voltage_sh_220_8.addFeatures(features_voltage_sh_220_8);var lyr_voltage_sh_220_8 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_voltage_sh_220_8, 
+                source:jsonSource_voltage_sh_220_8,
                 style: style_voltage_sh_220_8,
                 title: '<img src="styles/legend/voltage_sh_220_8.png" /> voltage_sh_220'
             });var format_voltage_sh_154_9 = new ol.format.GeoJSON();
-var features_voltage_sh_154_9 = format_voltage_sh_154_9.readFeatures(json_voltage_sh_154_9, 
+var features_voltage_sh_154_9 = format_voltage_sh_154_9.readFeatures(json_voltage_sh_154_9,
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
 var jsonSource_voltage_sh_154_9 = new ol.source.Vector({
     attributions: '<a href=""></a>',
 });
 jsonSource_voltage_sh_154_9.addFeatures(features_voltage_sh_154_9);var lyr_voltage_sh_154_9 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_voltage_sh_154_9, 
+                source:jsonSource_voltage_sh_154_9,
                 style: style_voltage_sh_154_9,
                 title: '<img src="styles/legend/voltage_sh_154_9.png" /> voltage_sh_154'
             });var format_voltage_sh_150_10 = new ol.format.GeoJSON();
-var features_voltage_sh_150_10 = format_voltage_sh_150_10.readFeatures(json_voltage_sh_150_10, 
+var features_voltage_sh_150_10 = format_voltage_sh_150_10.readFeatures(json_voltage_sh_150_10,
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
 var jsonSource_voltage_sh_150_10 = new ol.source.Vector({
     attributions: '<a href=""></a>',
 });
 jsonSource_voltage_sh_150_10.addFeatures(features_voltage_sh_150_10);var lyr_voltage_sh_150_10 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_voltage_sh_150_10, 
+                source:jsonSource_voltage_sh_150_10,
                 style: style_voltage_sh_150_10,
                 title: '<img src="styles/legend/voltage_sh_150_10.png" /> voltage_sh_150'
             });var format_voltage_sh_138_11 = new ol.format.GeoJSON();
-var features_voltage_sh_138_11 = format_voltage_sh_138_11.readFeatures(json_voltage_sh_138_11, 
+var features_voltage_sh_138_11 = format_voltage_sh_138_11.readFeatures(json_voltage_sh_138_11,
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
 var jsonSource_voltage_sh_138_11 = new ol.source.Vector({
     attributions: '<a href=""></a>',
 });
 jsonSource_voltage_sh_138_11.addFeatures(features_voltage_sh_138_11);var lyr_voltage_sh_138_11 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_voltage_sh_138_11, 
+                source:jsonSource_voltage_sh_138_11,
                 style: style_voltage_sh_138_11,
                 title: '<img src="styles/legend/voltage_sh_138_11.png" /> voltage_sh_138'
             });var format_voltage_sh_110_12 = new ol.format.GeoJSON();
-var features_voltage_sh_110_12 = format_voltage_sh_110_12.readFeatures(json_voltage_sh_110_12, 
+var features_voltage_sh_110_12 = format_voltage_sh_110_12.readFeatures(json_voltage_sh_110_12,
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
 var jsonSource_voltage_sh_110_12 = new ol.source.Vector({
     attributions: '<a href=""></a>',
 });
 jsonSource_voltage_sh_110_12.addFeatures(features_voltage_sh_110_12);var lyr_voltage_sh_110_12 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_voltage_sh_110_12, 
+                source:jsonSource_voltage_sh_110_12,
                 style: style_voltage_sh_110_12,
                 title: '<img src="styles/legend/voltage_sh_110_12.png" /> voltage_sh_110'
             });var format_voltage_sh_100_13 = new ol.format.GeoJSON();
-var features_voltage_sh_100_13 = format_voltage_sh_100_13.readFeatures(json_voltage_sh_100_13, 
+var features_voltage_sh_100_13 = format_voltage_sh_100_13.readFeatures(json_voltage_sh_100_13,
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
 var jsonSource_voltage_sh_100_13 = new ol.source.Vector({
     attributions: '<a href=""></a>',
 });
 jsonSource_voltage_sh_100_13.addFeatures(features_voltage_sh_100_13);var lyr_voltage_sh_100_13 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_voltage_sh_100_13, 
+                source:jsonSource_voltage_sh_100_13,
                 style: style_voltage_sh_100_13,
                 title: '<img src="styles/legend/voltage_sh_100_13.png" /> voltage_sh_100'
             });
